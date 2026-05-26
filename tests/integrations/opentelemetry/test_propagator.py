@@ -305,7 +305,6 @@ def test_inject_sentry_span_baggage():
 
 
 def test_inject_no_memory_leak():
-
     OpenTelemetryIntegration.setup_once()
 
     tracer = trace.get_tracer(__name__)
