@@ -724,9 +724,7 @@ def _render_dependencies(integration: str, releases: list[Version]) -> list[str]
     return rendered
 
 
-def _render_latest_dependencies(
-    integration: str, latest_release: Version
-) -> list[str]:
+def _render_latest_dependencies(integration: str, latest_release: Version) -> list[str]:
     """Render version-specific dependencies for the 'latest' alias.
 
     Dependencies with "*" or "py3.*" constraints already match the latest
